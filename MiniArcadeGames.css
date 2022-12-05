@@ -1,0 +1,356 @@
+body{
+    background-color: var(--base-2);
+    color: var(--contrast);
+    background-image: url('https://miminogames.com/wp-content/uploads/2022/09/dragon-scales.svg');
+    background-attachment: fixed;
+
+}
+.navbar
+{
+   width:100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color : white;
+    font-size: 28px;
+}
+nav ul li{
+    list-style-type: none;
+    display:inline-block;
+    padding-left: 120px;
+    font-size: 15px;
+    padding-right:120px;
+}
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav li a:hover{
+    color:#ea1538;
+    transition:0.3s;
+    cursor: pointer;
+}
+button{
+    border: none;
+    background:#5c6dc9;
+    padding: 12px 30px;
+    border-radius:30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition:0.5s
+}
+button a {
+    color : black;
+}
+button:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.container
+{
+    display: flex;
+    justify-content:space-evenly;
+    min-height: 70vh;
+    align-items: center;
+}
+header
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    padding-top:1cm;
+    color:rgb(231, 216, 216);
+}
+.tower-blocks
+{
+    position:relative;
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;   
+}
+.tower-blocks .info1
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.tower-blocks .info1::before
+{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background: #d34e50;
+    clip-path: circle(180px at center);
+    transition: 0.5s;
+}
+.tower-blocks:hover .info1:before
+{
+    background: #0065c3;
+    clip-path: circle(400px at center);
+}
+.tower-blocks img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 240px;
+    transform:translate(-50%,-50%);
+    height:220px ;
+    border-radius: 20px;
+    pointer-events: none;
+    transition : 0.5s;
+}
+.tower-blocks:hover img
+{
+    left:72%;
+    height: 250px;
+    width: 200px;   
+}
+.tower-blocks .content 
+{
+    position: relative;
+    width:40%;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 20px 20px 20px 20px;
+    transition: 0.25s;
+    visibility: hidden;
+}
+.tower-blocks:hover .content
+{
+    left:0;
+    opacity: 1;
+    visibility: visible;
+}
+.tower-blocks .content p
+{
+    color:#fff;
+
+}
+.tower-blocks .content h2
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+}
+.tower-blocks .content a
+{
+    position: relative;
+    color:#fff;
+    padding :10px 20px;
+    border-radius: 10px;
+    background: black;
+    display : inline-block;
+    text-decoration: none;
+    font-weight: 700;
+}
+.memory-flip-game
+{
+    position:relative;
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;   
+}
+.memory-flip-game .info2
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.memory-flip-game .info2::before
+{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background: #d34e50;
+    clip-path: circle(180px at center);
+    transition: 0.5s;
+}
+.memory-flip-game:hover .info2::before
+{
+    background: #0065c3;
+    clip-path: circle(400px at center);
+}
+.memory-flip-game img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    height:220px ;
+    border-radius: 20px;
+    pointer-events: none;
+    transition : 0.5s;
+}
+.memory-flip-game:hover img
+{
+    left:72%;
+    height: 250px;
+    width: 200px; 
+} 
+.memory-flip-game .content
+{
+    position: relative;
+    width:40%;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 20px 20px 20px 20px;
+    transition: 0.25s;
+    visibility: hidden;
+}
+.memory-flip-game:hover .content
+{
+    left:0;
+    opacity: 1;
+    visibility: visible;
+}
+.memory-flip-game .content h2 
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+}
+.memory-flip-game .content p
+{
+    color:#fff;
+
+}
+.memory-flip-game .content a 
+{
+    position: relative;
+    color:#fff;
+    padding :10px 20px;
+    border-radius: 10px;
+    background: black;
+    display : inline-block;
+    text-decoration: none;
+    font-weight: 700;
+}
+.car-racing
+{
+    position:relative;
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s; 
+}
+.car-racing .info3
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.car-racing .info3::before
+{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background: #d34e50;
+    clip-path: circle(180px at center);
+    transition: 0.5s;
+}
+.car-racing:hover .info3:before
+{
+    background: #0065c3;
+    clip-path: circle(400px at center);
+}
+.car-racing img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:240px;
+    transform:translate(-50%,-50%);
+    height:220px ;
+    border-radius: 20px;
+    pointer-events: none;
+    transition : 0.5s;
+}
+.car-racing:hover img 
+{
+    left:72%;
+    height: 250px;
+    width: 200px; 
+} 
+.car-racing .content
+{
+    position: relative;
+    width:38%;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 20px 20px 20px 20px;
+    transition: 0.25s;
+    visibility: hidden;
+}
+.car-racing:hover .content
+{
+    left:0;
+    opacity: 1;
+    visibility: visible;
+}
+.car-racing .content h2
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+}
+.car-racing .content p
+{
+    color:#fff;
+}
+.car-racing .content a 
+{
+    position: relative;
+    color:#fff;
+    padding :10px 20px;
+    border-radius: 10px;
+    background: black;
+    display : inline-block;
+    text-decoration: none;
+    font-weight: 700;
+}
